@@ -1,0 +1,36 @@
+{
+  "name": "rgsoc-backend",
+  "version": "1.0.0",
+  "description": "rgsoc-backend",
+  "main": "app.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "test": "mocha './tests/**.spec.js' --timeout 20000",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [
+    "rgsoc"
+  ],
+  "author": "codeuino",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^3.22.0",
+    "mongoose": "^5.9.6",
+    "morgan": "^1.10.0",
+    "validator": "^13.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^7.1.1"
+  }
+}
