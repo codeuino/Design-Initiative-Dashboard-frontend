@@ -3,6 +3,9 @@ import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
+import OrgComponent from "../Organization/OrgComponent.jsx";
+import SearchIcon from '@material-ui/icons/Search';
+import InputBase from '@material-ui/core/InputBase';
 
 const useStyles = makeStyles({
   root: {
@@ -12,18 +15,34 @@ const useStyles = makeStyles({
   title: {
     fontSize: 40,
     marginLeft: 50,
-    marginTop: 20
+    marginTop: 30
   },
   pos: {
-    marginBottom: 15,
+    marginBottom: 12,
     marginLeft: 50
+  },
+  comp: {
+    display: "flex",
+  },
+  search: {
+    marginLeft: 200,
+    marginTop: 40,
+    flexGrow: 1,
+    display: "flex"
+  },
+  searchIcon: {
+    justifyContent: 'center',
+    width: 30
   }
 });
+
+
 
 export default function OutlinedCard() {
   const classes = useStyles();
 
   return (
+    <div>
     <Card className={classes.root} variant="outlined">
       <CardContent>
         <Typography className={classes.title} component="h2">
@@ -34,5 +53,17 @@ export default function OutlinedCard() {
         </Typography>
       </CardContent>
     </Card>
+    <div className={classes.search}>
+          <div className={classes.searchIcon}>
+              <SearchIcon />
+            </div>
+            <InputBase 
+              placeholder="Search for an organization or topic"
+            />
+      </div>
+    <div className={classes.comp}>
+      <OrgComponent/>
+      </div>
+      </div>
   );
 }

@@ -34,7 +34,7 @@ export default function MediaCard() {
       <CardContent>
         <Typography
           className={classes.pos1}
-          variant="h5"
+          variant="h7"
           component="p"
           align="center"
         >
