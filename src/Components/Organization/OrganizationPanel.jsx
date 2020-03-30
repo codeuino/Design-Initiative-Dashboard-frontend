@@ -28,7 +28,7 @@ const useStyles = makeStyles({
     padding: "30px"
   },
   search: {
-    marginLeft: 200,
+    marginLeft: 30,
     marginTop: 40,
     flexGrow: 1,
     display: "flex"
