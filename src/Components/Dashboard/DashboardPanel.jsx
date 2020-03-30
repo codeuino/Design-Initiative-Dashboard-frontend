@@ -13,7 +13,7 @@ const useStyles = makeStyles({
   },
   title: {
     fontSize: 40,
-    marginLeft: 50,
+    marginLeft: 60,
     marginTop: 30
   },
   comp: {

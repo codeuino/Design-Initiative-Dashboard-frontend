@@ -14,7 +14,7 @@ const useStyles = makeStyles({
   },
   title: {
     fontSize: 40,
-    marginLeft: 50,
+    marginLeft: 60,
     marginTop: 30
   },
   pos: {
@@ -23,6 +23,9 @@ const useStyles = makeStyles({
   },
   comp: {
     display: "flex",
+    flexWrap: "wrap",
+    flex: 1,
+    padding: "30px"
   },
   search: {
     marginLeft: 200,
@@ -32,6 +35,7 @@ const useStyles = makeStyles({
   },
   searchIcon: {
     justifyContent: 'center',
+    marginLeft:30,
     width: 30
   }
 });
@@ -62,7 +66,13 @@ export default function OutlinedCard() {
             />
       </div>
     <div className={classes.comp}>
-      <OrgComponent/>
+    <OrgComponent/>
+    <OrgComponent/>
+    <OrgComponent/>
+    <OrgComponent/>
+    <OrgComponent/>
+    <OrgComponent/>
+
       </div>
       </div>
   );

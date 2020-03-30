@@ -7,22 +7,23 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-import Codeuino from "../Image/Codeuino.jpg";
+import Codeuino from "../Assets/donut.png";
 
 const useStyles = makeStyles(theme => ({
   root: {
     maxWidth: 345,
     marginTop: 50,
+    marginLeft: 40,
     height: 350
   },
   large: {
     marginLeft: 235
   },
   im: {
-    marginLeft: 140,
-    marginTop: 20,
-    height: 70,
-    width: 70
+    marginLeft: 135,
+    marginTop: 40,
+    height: 75,
+    width: 75
   },
   pos1: {
     marginTop: 25

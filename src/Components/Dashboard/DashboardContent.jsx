@@ -16,7 +16,7 @@ const useStyles = makeStyles({
   },
   pos1: {
     marginTop: 35,
-    marginBottom: 40
+    marginBottom: 20
   },
   pos2: {
     marginBottom: 40
@@ -48,7 +48,7 @@ export default function MediaCard() {
           component="h2"
           align="center"
         >
-          Name
+          Siddharth S
         </Typography>
         <Typography
           className={classes.pos2}
@@ -57,7 +57,7 @@ export default function MediaCard() {
           component="p"
           align="center"
         >
-          email.sample@gmail.com
+          siddharth.simharaju@gmail.com
         </Typography>
       </CardContent>
     </Card>
