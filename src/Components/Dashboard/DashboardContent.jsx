@@ -52,8 +52,7 @@ export default function MediaCard() {
         </Typography>
         <Typography
           className={classes.pos2}
-          variant="body2"
-          color="textSecondary"
+          variant="h7"
           component="p"
           align="center"
         >

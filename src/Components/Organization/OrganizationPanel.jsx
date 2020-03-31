@@ -19,7 +19,7 @@ const useStyles = makeStyles({
   },
   pos: {
     marginBottom: 12,
-    marginLeft: 50
+    marginLeft: 60
   },
   comp: {
     display: "flex",

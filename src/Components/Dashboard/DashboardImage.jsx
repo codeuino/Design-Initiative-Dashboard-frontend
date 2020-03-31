@@ -7,7 +7,8 @@ const useStyles = makeStyles(theme => ({
     display: "flex",
     "& > *": {
       marginLeft: 98,
-      marginTop: 5
+      marginTop: 5,
+      background: "#4054B2"
     }
   },
 
@@ -23,7 +24,7 @@ export default function ImageAvatars() {
   return (
     <div className={classes.root}>
       <Avatar
-        alt="Remy Sharp"
+        alt="Siddharth S"
         src="/static/images/avatar/1.jpg"
         className={classes.large}
       />

@@ -44,7 +44,7 @@ function a11yProps(index) {
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
-    backgroundColor: theme.palette.background.paper
+    backgroundColor: theme.palette.background
   },
   title: {
     flexGrow: 1,
@@ -73,7 +73,7 @@ export default function Header() {
             onChange={handleChange}
             aria-label="simple tabs example"
           >
-            <Tab label="ORGANISATIONS" {...a11yProps(0)} />
+            <Tab label="ORGANIZATIONS" {...a11yProps(0)} />
             <Tab label="DASHBOARD" {...a11yProps(1)} />
           </Tabs>
         </Toolbar>
