@@ -1,14 +1,13 @@
-import React from 'react';
-import Posts from './Components/Posts/Posts';
+import React, { Component, Fragment } from "react";
 
+import Header from "./Components/Header.jsx";
 
-function App() {
-  return (
-    <div className="container mt-3">
-      <h1 style={{textAlign: "center"}}>Hello from Codeuino to RGSOC aspirants! 😉</h1>
-      <Posts />
-    </div>
-  );
+export default class extends Component {
+  render() {
+    return (
+      <Fragment>
+        <Header />
+      </Fragment>
+    );
+  }
 }
-
-export default App;
