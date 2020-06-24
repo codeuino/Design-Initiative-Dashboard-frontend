@@ -1,13 +1,27 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import Navbar from './Components/Layout/Header'
+import Dashboard from './Components/Dashboard/DashboardPanel'
+import Organization from './Components/Organization/OrganizationPanel'
+import SignIn from './Components/Authentication/Signin'
+import SignUp from './Components/Authentication/Signup'
 
-import Header from "./Components/Header.jsx";
-
-export default class extends Component {
+class App extends Component {
   render() {
     return (
-      <Fragment>
-        <Header />
-      </Fragment>
+      <BrowserRouter>
+        <div className="App">
+          <Switch>
+             <Route exact path='/'component={Navbar} /> 
+             {/* <Route path='/organizations' component={Organization} />  */}
+            <Route path='/signin' component={SignIn} />
+            <Route path='/signup' component={SignUp} />
+
+          </Switch>
+        </div>
+      </BrowserRouter>
     );
   }
 }
+
+export default App;

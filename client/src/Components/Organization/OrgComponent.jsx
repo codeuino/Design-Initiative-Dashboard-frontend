@@ -7,10 +7,12 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-import Codeuino from "../../Assets/donut.png";
+import {cardData} from "./Org.json";
+
 
 const useStyles = makeStyles(theme => ({
   root: {
+    backgroundColor: "#FFFFFF",
     maxWidth: 345,
     marginTop: 50,
     marginLeft: 40,
@@ -35,45 +37,47 @@ const useStyles = makeStyles(theme => ({
 
 export default function ImgMediaCard() {
   const classes = useStyles();
-
-  return (
-    <Card className={classes.root}>
-      <CardActionArea>
-        <CardMedia
-          className={classes.im}
-          component="img"
-          alt="org-logo"
-          height="140"
-          src={Codeuino}
-          title="Organisation card"
-        />
-        <CardContent>
-          <Typography
-            gutterBottom
-            variant="h5"
-            component="h2"
-            align="center"
-            className={classes.pos1}
-          >
-            Codeuino
-          </Typography>
-          <Typography
-            variant="body2"
-            color="textSecondary"
-            component="p"
-            align="center"
-            className={classes.pos2}
-          >
-            CodeUino is a Non-Profit Open Source Social Networking organisation
-            that provides various robust....
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary" className={classes.large}>
-          See more
-        </Button>
-      </CardActions>
-    </Card>
-  );
-}
+    return (
+        <React.Fragment>
+        {cardData.map((data) => (
+          <Card className={classes.root}>
+            <CardActionArea>
+              <CardMedia
+                className={classes.im}
+                component="img"
+                alt="org-logo"
+                height="140"
+                src= {data.image}
+                title="Organization card"
+              />
+              <CardContent>
+                <Typography
+                  gutterBottom
+                  variant="h5"
+                  component="h2"
+                  align="center"
+                  className={classes.pos1}
+                >
+                  {data.title}
+                </Typography>
+                <Typography
+                  variant="body2"
+                  color="textSecondary"
+                  component="p"
+                  align="center"
+                  className={classes.pos2}
+                >
+                  {data.summary}
+                </Typography>
+              </CardContent>
+            </CardActionArea> 
+            <CardActions>
+                <Button size="small" color="primary" className={classes.large}>
+                  See more
+                </Button>
+              </CardActions>
+          </Card>
+        ))}
+        </React.Fragment> 
+    );
+};      

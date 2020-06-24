@@ -8,8 +8,8 @@ import Tab from "@material-ui/core/Tab";
 import BrushIcon from "@material-ui/icons/Brush";
 import PropTypes from "prop-types";
 import Box from "@material-ui/core/Box";
-import DashboardPanel from "./Dashboard/DashboardPanel";
-import OrganizationPanel from "./Organization/OrganizationPanel";
+import DashboardPanel from "../Dashboard/DashboardPanel";
+import OrganizationPanel from "../Organization/OrganizationPanel";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -73,17 +73,17 @@ export default function Header() {
             onChange={handleChange}
             aria-label="simple tabs example"
           >
-            <Tab label="ORGANIZATIONS" {...a11yProps(0)} />
             <Tab label="DASHBOARD" {...a11yProps(1)} />
+            <Tab label="ORGANIZATIONS" {...a11yProps(0)} />
           </Tabs>
         </Toolbar>
       </AppBar>
-      <TabPanel value={value} index={0}>
+      <TabPanel value={value} index={1}>
         <OrganizationPanel />
       </TabPanel>
-      <TabPanel value={value} index={1}>
+      <TabPanel value={value} index={0}>
         <DashboardPanel />
-      </TabPanel>
+      </TabPanel> 
     </div>
   );
 }

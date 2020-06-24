@@ -6,6 +6,7 @@ import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import DashboardImage from "../Dashboard/DashboardImage.jsx";
+import {profileData} from "./Profile.json";
 
 const useStyles = makeStyles({
   root: {
@@ -30,35 +31,39 @@ export default function MediaCard() {
   const classes = useStyles();
 
   return (
-    <Card className={classes.root}>
-      <Card elevation={3} />
+    <>
+    {profileData.map((dt) => (
+      <Card className={classes.root}>
+            <Card elevation={3} />
+            <CardActions>
+              <Button size="small" color="primary" className={classes.buttonspacing}>
+                Edit
+              </Button>
+            </CardActions>
 
-      <CardActions>
-        <Button size="small" color="primary" className={classes.buttonspacing}>
-          Edit
-        </Button>
-      </CardActions>
+            <CardContent>
+              <DashboardImage />
 
-      <CardContent>
-        <DashboardImage />
-
-        <Typography
-          className={classes.pos1}
-          variant="h5"
-          component="h2"
-          align="center"
-        >
-          Siddharth S
-        </Typography>
-        <Typography
-          className={classes.pos2}
-          variant="h7"
-          component="p"
-          align="center"
-        >
-          siddharth.simharaju@gmail.com
-        </Typography>
-      </CardContent>
-    </Card>
+              <Typography
+                className={classes.pos1}
+                variant="h5"
+                component="h2"
+                align="center"
+              >
+                {dt.name}
+              </Typography>
+              <Typography
+                className={classes.pos2}
+                variant="body1"
+                component="p"
+                align="center"
+              >
+                {dt.email}
+              </Typography>
+            </CardContent>
+          </Card>
+    ))}
+    </>
+          
   );
-}
+};
