@@ -1,14 +1,27 @@
-import React from 'react';
-import Posts from './Components/Posts/Posts';
+import React, { Component } from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import Navbar from './Components/Layout/Header'
+import Dashboard from './Components/Dashboard/DashboardPanel'
+import Organization from './Components/Organization/OrganizationPanel'
+import SignIn from './Components/Authentication/Signin'
+import SignUp from './Components/Authentication/Signup'
 
+class App extends Component {
+  render() {
+    return (
+      <BrowserRouter>
+        <div className="App">
+          <Switch>
+             <Route exact path='/'component={Navbar} /> 
+             {/* <Route path='/organizations' component={Organization} />  */}
+            <Route path='/signin' component={SignIn} />
+            <Route path='/signup' component={SignUp} />
 
-function App() {
-  return (
-    <div className="container mt-3">
-      <h1 style={{textAlign: "center"}}>Hello from Codeuino to RGSOC aspirants! 😉</h1>
-      <Posts />
-    </div>
-  );
+          </Switch>
+        </div>
+      </BrowserRouter>
+    );
+  }
 }
 
 export default App;
