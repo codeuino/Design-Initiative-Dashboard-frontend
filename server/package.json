@@ -26,6 +26,7 @@
     "helmet": "^3.22.0",
     "mongoose": "^5.9.6",
     "morgan": "^1.10.0",
+    "nodemon": "^2.0.4",
     "validator": "^13.0.0"
   },
   "devDependencies": {
