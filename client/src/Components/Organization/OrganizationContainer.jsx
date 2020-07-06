@@ -1,5 +1,4 @@
 import React , {Component} from "react";
-import { makeStyles } from "@material-ui/core/styles";
 import {withStyles} from "@material-ui/core/styles";
 import OrganizationCard from "../Organization/OrganizationCard.jsx";
 import SearchIcon from "@material-ui/icons/Search";

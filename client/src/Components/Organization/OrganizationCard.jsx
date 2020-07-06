@@ -42,7 +42,7 @@ export default function ImgMediaCard() {
   const history = useHistory();
 
   function handleChange(){
-    history.push('./OrganizationDetail');
+    history.push('/OrganizationDetail');
   }
   
     return (

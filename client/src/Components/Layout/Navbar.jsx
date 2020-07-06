@@ -29,12 +29,12 @@ export default function Navbar() {
   };
 
   const handleClick = () => {
-    history.push('./Dashboard');
+    history.push('/Dashboard');
     
   };
 
   const handle = () => {
-    history.push('./Organization');
+    history.push('/Organization');
   };
 
 
