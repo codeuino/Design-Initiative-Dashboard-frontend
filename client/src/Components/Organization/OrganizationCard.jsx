@@ -7,7 +7,8 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-import {cardData} from "./Org.json";
+import {cardData} from "../../Data/Org.json";
+import { useHistory } from "react-router-dom";
 
 
 const useStyles = makeStyles(theme => ({
@@ -35,8 +36,15 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
+
 export default function ImgMediaCard() {
   const classes = useStyles();
+  const history = useHistory();
+
+  function handleChange(){
+    history.push('./OrganizationDetail');
+  }
+  
     return (
         <React.Fragment>
         {cardData.map((data) => (
@@ -72,7 +80,7 @@ export default function ImgMediaCard() {
               </CardContent>
             </CardActionArea> 
             <CardActions>
-                <Button size="small" color="primary" className={classes.large}>
+                <Button size="small" color="primary" className={classes.large} onClick={handleChange}>
                   See more
                 </Button>
               </CardActions>
