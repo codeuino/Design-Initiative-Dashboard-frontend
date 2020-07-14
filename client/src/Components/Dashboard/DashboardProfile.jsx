@@ -5,15 +5,15 @@ import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-import DashboardImage from "../Dashboard/DashboardImage.jsx";
-import {profileData} from "./Profile.json";
+import ProfileImage from "../Dashboard/ProfileImage.jsx";
+import {profileData} from "../../Data/Profile.json";
 
 const useStyles = makeStyles({
   root: {
     minWidth: 350,
-    marginTop: 100,
+    marginTop: 0,
     height: 400,
-    marginLeft: 170
+    marginLeft: 170,
   },
   pos1: {
     marginTop: 35,
@@ -42,7 +42,7 @@ export default function MediaCard() {
             </CardActions>
 
             <CardContent>
-              <DashboardImage />
+              <ProfileImage />
 
               <Typography
                 className={classes.pos1}

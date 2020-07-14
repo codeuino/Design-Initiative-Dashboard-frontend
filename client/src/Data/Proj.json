@@ -1,0 +1,66 @@
+{
+    "cardData": [
+        {
+            "id":1,
+            "title": "Donut",
+            "image" : "https://git.io/JfpBD",
+            "desc": "Donut is the core project of Codeuino. It needs some graphics to be worked on and also to improve the UX of the whole platform.",
+            "features": [
+                {
+                    "name" : "UI/UX"
+                },
+                {
+                    "name": "Graphic Design"
+                }
+            ]
+        },
+        {
+            "id":2,
+            "title": "Donut",
+            "image" : "https://git.io/JfpBD",
+            "desc": "Donut is the core project of Codeuino. It needs some graphics to be worked on and also to improve the UX of the whole platform.",
+            "features": [
+                {
+                    "name" : "UI/UX"
+                },
+                {
+                    "name": "Graphic Design"
+                }
+            ]
+        
+        },
+        {
+            "id":3,
+            "title": "Donut",
+            "image" : "https://git.io/JfpBD",
+            "desc": "Donut is the core project of Codeuino. It needs some graphics to be worked on and also to improve the UX of the whole platform.",
+            "features": [
+                {
+                    "name" : "UI/UX"
+                },
+                {
+                    "name": "Graphic Design"
+                }
+            ]
+        }
+    ],
+
+    "about" : [
+        {
+           "desc": "CodeUino is a Non-Profit Open Source Social Networking organisation that provides various robust frameworks solutions which could span the entire world through building all kinds of social environments, discussion portals and collaboration platforms by giving prospectus to various other organisations, users and outreachers to showcase their products in a custom way.",
+           "features": [
+            {
+                "name" : "UI/UX"
+            },
+            {
+                "name": "Graphic Design"
+            },
+            {
+                "name": "Illustrations"
+            }
+    
+        ]
+        }
+
+    ]
+}
