@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import ProjectDetailsHeader from "./ProjectDetailsHeader"
-import ProfileDescription from "./ProjectDescription"
+import ProjectDescription from "./ProjectDescription"
 
 
 
@@ -9,7 +9,7 @@ export class ProjectDetailsContainer extends Component {
         return (
             <div>
                 <ProjectDetailsHeader/>
-                <ProfileDescription/>
+                <ProjectDescription/>
             </div>
         )
     }
