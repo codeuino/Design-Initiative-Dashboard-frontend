@@ -11,5 +11,5 @@ const ProjectDetailsContainer = () => {
       </div>
     </div>
   );
-}
+};
 export default ProjectDetailsContainer;

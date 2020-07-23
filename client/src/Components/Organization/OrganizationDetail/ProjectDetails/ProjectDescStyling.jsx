@@ -1,51 +1,38 @@
 import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles({
   root: {
-    flexGrow: 1,
+    marginTop: 50,
+    marginLeft: 50,
+    marginRight: 50,
   },
-  LeftCardContent: {
-    textAlign: "left",
-    marginLeft: 70,
+  pos1: {
+    marginTop: 140,
   },
-  RightCardContent: {
-    marginRight: 70,
-    textAlign: "Right",
+  buttonspacing: {
+    marginLeft: 195,
   },
-  projectname: {
-    marginTop: 30,
-    fontSize: 48,
-  },
-  submit: {
-    marginTop: 30,
+  head: {
     fontSize: 18,
+    marginTop: 40,
   },
-  orgname: {
-    fontSize: 20,
-    marginLeft: -7,
-    marginTop: -35,
+  text: {
+    marginLeft: 10,
+    fontSize: 17,
   },
-  orglink: {
+  listSection: {
+    backgroundColor: "inherit",
+  },
+  ul: {
+    backgroundColor: "inherit",
+    padding: 0,
+  },
+  tasks: {
+    marginLeft: -10,
+  },
+  github: {
     fontSize: 15,
-    marginTop: -30,
   },
-  cap: {
-    borderRadius: "30px",
-    marginLeft: 10,
-    fontSize: 13,
-    textTransform: "none",
-  },
-  tt: {
-    fontSize: 18,
-    marginTop: 15,
-  },
-  mentors: {
-    fontSize: 18,
-  },
-  contact: {
-    fontSize: 13,
-    marginLeft: 10,
-  },
-}));
+});
 
 export default useStyles;

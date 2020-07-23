@@ -6,41 +6,7 @@ import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import List from "@material-ui/core/List";
 import { Link } from "@material-ui/core";
-
-const useStyles = makeStyles({
-  root: {
-    marginTop: 50,
-    marginLeft: 50,
-    marginRight: 50,
-  },
-  pos1: {
-    marginTop: 140,
-  },
-  buttonspacing: {
-    marginLeft: 195,
-  },
-  head: {
-    fontSize: 18,
-    marginTop: 40,
-  },
-  text: {
-    marginLeft: 10,
-    fontSize: 17,
-  },
-  listSection: {
-    backgroundColor: "inherit",
-  },
-  ul: {
-    backgroundColor: "inherit",
-    padding: 0,
-  },
-  tasks: {
-    marginLeft: -10,
-  },
-  github: {
-    fontSize: 15,
-  },
-});
+import useStyles from "./ProjectDescStyling";
 
 function ProjectDescription() {
   const classes = useStyles();

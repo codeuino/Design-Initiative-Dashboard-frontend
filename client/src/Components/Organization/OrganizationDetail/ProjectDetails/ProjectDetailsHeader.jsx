@@ -3,7 +3,7 @@ import Card from "@material-ui/core/Card";
 import Grid from "@material-ui/core/Grid";
 import LeftPane from "./LeftPane";
 import RightPane from "./RightPane";
-import useStyles from "./ProjectDescStyling";
+import useStyles from "./ProjectHeaderStyling";
 
 const FormRow = () => {
   return (
@@ -18,7 +18,7 @@ const FormRow = () => {
   );
 };
 
-const ProjectDetailsHeader =() => {
+const ProjectDetailsHeader = () => {
   const classes = useStyles();
   return (
     <div className={classes.root}>
@@ -31,6 +31,6 @@ const ProjectDetailsHeader =() => {
       </Card>
     </div>
   );
-}
+};
 
-export default ProjectDetailsHeader
+export default ProjectDetailsHeader;

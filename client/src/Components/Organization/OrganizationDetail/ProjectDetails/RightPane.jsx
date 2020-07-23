@@ -3,7 +3,7 @@ import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import { Link } from "@material-ui/core";
 import Button from "@material-ui/core/Button";
-import useStyles from "./ProjectDescStyling";
+import useStyles from "./ProjectHeaderStyling";
 
 const RightPane = () => {
   const classes = useStyles();
