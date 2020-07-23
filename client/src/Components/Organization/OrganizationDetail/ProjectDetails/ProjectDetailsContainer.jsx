@@ -1,18 +1,15 @@
-import React, {Component} from "react";
-import ProjectDetailsHeader from "./ProjectDetailsHeader"
-import ProjectDescription from "./ProjectDescription"
+import React from "react";
+import ProjectDetailsHeader from "./ProjectDetailsHeader";
+import ProjectDescription from "./ProjectDescription";
 
-
-
-export class ProjectDetailsContainer extends Component {
-    render() {
-        return (
-            <div>
-                <ProjectDetailsHeader/>
-                <ProjectDescription/>
-            </div>
-        )
-    }
+const ProjectDetailsContainer = () => {
+  return (
+    <div>
+      <div>
+        <ProjectDetailsHeader />
+        <ProjectDescription />
+      </div>
+    </div>
+  );
 }
-
-export default ProjectDetailsContainer
+export default ProjectDetailsContainer;

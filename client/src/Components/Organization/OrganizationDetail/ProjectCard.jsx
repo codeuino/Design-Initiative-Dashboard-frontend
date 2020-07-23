@@ -56,7 +56,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function ImgMediaCard() {
+export default function ProjectCard() {
   const classes = useStyles();
   const history = useHistory();
 
