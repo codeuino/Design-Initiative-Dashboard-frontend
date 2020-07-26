@@ -6,7 +6,7 @@ import DashboardContainer from './Components/Dashboard/DashboardContainer';
 import DetailContainer from './Components/Organization/OrganizationDetail/DetailContainer';
 import SignIn from './Components/Authentication/Signin'
 import SignUp from './Components/Authentication/Signup'
-
+import ProjectDetails from './Components/Organization/OrganizationDetail/ProjectDetails/ProjectDetailsContainer'
 
 class App extends Component {
   render() {
@@ -17,9 +17,11 @@ class App extends Component {
           <Switch>
              <Route exact path='/Dashboard' component={DashboardContainer} /> 
              <Route exact path='/organization' component={OrganizationContainer} />
-			        <Route exact path='/OrganizationDetail' component = {DetailContainer} />			 
-            <Route exact path='/signin' component={SignIn} />
-            <Route exact path='/signup' component={SignUp} />
+			 <Route path='/OrganizationDetail' component = {DetailContainer} />			 
+             {/* <Route exact path='/'component={Navbar} /> */}
+            <Route path='/signin' component={SignIn} />
+            <Route path='/signup' component={SignUp} />
+            <Route path='/ProjectDetails' component ={ProjectDetails}/>
 
           </Switch>
         </div>
