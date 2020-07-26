@@ -1,0 +1,33 @@
+{
+    "selectedProposal": [
+    {
+        "id":1,
+        "title": "Donut",
+        "image" : "https://git.io/JfpBD",
+        "desc": "Donut is the core project of Codeuino. It needs some graphics to be worked on and also to improve the UX of the whole platform.",
+        "features": [
+            {
+                "name" : "UI/UX"
+            },
+            {
+                "name": "Graphic Design"
+            }
+        ]
+    },
+    {
+        "id":2,
+        "title": "Donut",
+        "image" : "https://git.io/JfpBD",
+        "desc": "Donut is the core project of Codeuino. It needs some graphics to be worked on and also to improve the UX of the whole platform.",
+        "features": [
+            {
+                "name" : "UI/UX"
+            },
+            {
+                "name": "Graphic Design"
+            }
+        ]
+    
+    }
+]
+}
