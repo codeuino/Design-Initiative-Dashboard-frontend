@@ -1,5 +1,5 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
+import useStyles from "./ProposalStyling";
 import Card from "@material-ui/core/Card";
 import { CardActions } from "@material-ui/core";
 import CardContent from "@material-ui/core/CardContent";
@@ -7,53 +7,6 @@ import { CardMedia } from "@material-ui/core";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import {selectedProposal} from "../../../Data/ProposalInfo.json";
-
-const useStyles = makeStyles(theme => ({
-  root: {
-    backgroundColor: "#FFFFFF",
-    maxWidth: 700,
-    marginBottom: 20,
-    marginLeft: 150,
-    height: 160,
-    display: "block"
-  },
-  details: {
-    display: "flex",
-    flexDirection: "row"
-  },
-  im: {
-    marginLeft: 45,
-    marginTop: 15,
-    height: 100,
-    width: 100
-  },
-  content: {
-    marginTop: 0,
-    marginLeft: 20
-  },
-  
-  pos1: {
-    marginTop: 0,
-    maxWidth: 450
-  },
-  pos2: {
-    marginTop: 15,
-    height: 10
-  },
-  btn: {
-    marginLeft: 400,
-    marginTop: -2,
-    height: 23,
-    variant:"text"
-  },
-  cap: {
-    marginTop: 0,
-    marginLeft: 30,
-    borderRadius: "30px",
-    height: 23,
-    textTransform: "none",
-  }
-}));
 
 export default function ImgMediaCard() {
   const classes = useStyles();
