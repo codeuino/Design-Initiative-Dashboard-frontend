@@ -11,10 +11,10 @@ export default function Detail() {
       <Header name="Dashboard" />
       <div className={classes.comp}>
         <div className={classes.multicomp}>
-            <div className={classes.pro}>
-              <p>Profile</p>
-            </div>
-            <Profile />
+          <div className={classes.pro}>
+            <p>Profile</p>
+          </div>
+          <Profile />
         </div>
         <div className={classes.multicomp}>
           <div className={classes.pro}>
