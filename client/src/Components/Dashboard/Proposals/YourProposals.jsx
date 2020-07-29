@@ -4,7 +4,7 @@ import Profile from "../DashboardProfile";
 import useStyles from "./ProposalStyling";
 import PropDetail from "./ProposalDetail";
 
-export default function Detail() {
+const YourProposals = () => {
   const classes = useStyles();
   return (
     <div>
@@ -25,4 +25,6 @@ export default function Detail() {
       </div>
     </div>
   );
-}
+};
+
+export default YourProposals;

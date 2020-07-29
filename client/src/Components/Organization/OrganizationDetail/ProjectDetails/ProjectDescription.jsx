@@ -8,7 +8,7 @@ import { Link } from "@material-ui/core";
 import useStyles from "./ProjectDescStyling";
 import { about } from "../../../../Data/Projdetails.json";
 
-function ProjectDescription() {
+const ProjectDescription = () => {
   const classes = useStyles();
 
   return (
@@ -17,50 +17,36 @@ function ProjectDescription() {
         <Card className={classes.root}>
           <Card />
           <CardContent>
-            <Typography className={classes.head} component="h2">
+            <Typography className={classes.head}>
               <Box fontWeight="fontWeightBold" m={1}>
                 Description:
               </Box>
             </Typography>
-            <Typography className={classes.text} component="h2">
-              {data.desc}
-            </Typography>
-            <Typography className={classes.head} component="h2">
+            <Typography className={classes.text}>{data.desc}</Typography>
+            <Typography className={classes.head}>
               <Box fontWeight="fontWeightBold" m={1}>
                 What do we Except?
               </Box>
             </Typography>
-            <Typography className={classes.text} component="h2">
-              {data.expect}
-            </Typography>
-            <Typography className={classes.head} component="h2">
+            <Typography className={classes.text}>{data.expect}</Typography>
+            <Typography className={classes.head}>
               <Box fontWeight="fontWeightBold" m={1}>
                 Tasks:
               </Box>
               <List>
                 <ul type="disc" className={classes.tasks}>
-                  <li>
-                    Task #1{" "}
-                    <Link href={data.task1} className={classes.github}>
-                      (GitHub)
-                    </Link>{" "}
-                  </li>
-                  <li>
-                    Task #2{" "}
-                    <Link href={data.task2} className={classes.github}>
-                      (GitHub)
-                    </Link>
-                  </li>
-                  <li>
-                    Task #3{" "}
-                    <Link href={data.task3} className={classes.github}>
-                      (GitHub)
-                    </Link>
-                  </li>
+                  {data.tasks.map((tasks) => (
+                    <li>
+                      Task #{tasks.id}{" "}
+                      <Link href={tasks.t} className={classes.github}>
+                        (GitHub)
+                      </Link>{" "}
+                    </li>
+                  ))}
                 </ul>
               </List>
             </Typography>
-            <Typography className={classes.text} component="h2">
+            <Typography className={classes.text}>
               <List />
             </Typography>
           </CardContent>
@@ -69,6 +55,6 @@ function ProjectDescription() {
       ;
     </div>
   );
-}
+};
 
 export default ProjectDescription;

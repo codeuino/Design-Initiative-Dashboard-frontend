@@ -28,9 +28,20 @@
       ],
       "mentor1": "Jaskirat Singh",
       "mentor2": "Siddarth",
-      "task1": "https://github.com/codeuino/social-platform-donut-frontend/issues/519",
-      "task2": "https://github.com/codeuino/social-platform-donut-frontend/issues/519",
-      "task3": "https://github.com/codeuino/social-platform-donut-frontend/issues/519",
+      "tasks": [
+        {
+          "id": 1,
+          "t": "https://github.com/codeuino/social-platform-donut-frontend/issues/519"
+        },
+        {
+          "id": 2,
+          "t": "https://github.com/codeuino/social-platform-donut-frontend/issues/519"
+        },
+        {
+          "id": 3,
+          "t": "https://github.com/codeuino/social-platform-donut-frontend/issues/519"
+        }
+      ],
       "irc": "http://slack.codeuino.org/",
       "mailinglist": "http://slack.codeuino.org/"
     }

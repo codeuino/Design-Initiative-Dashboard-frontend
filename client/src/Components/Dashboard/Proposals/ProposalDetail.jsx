@@ -8,10 +8,10 @@ import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import { selectedProposal } from "../../../Data/ProposalInfo.json";
 
-export default function ImgMediaCard() {
+const ProposalDetail = () => {
   const classes = useStyles();
   return (
-    <React.Fragment>
+    <div>
       {selectedProposal.map((data) => (
         <Card className={classes.root}>
           <div className={classes.details}>
@@ -65,6 +65,8 @@ export default function ImgMediaCard() {
           </div>
         </Card>
       ))}
-    </React.Fragment>
+    </div>
   );
-}
+};
+
+export default ProposalDetail;
