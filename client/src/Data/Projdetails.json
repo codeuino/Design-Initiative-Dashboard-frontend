@@ -1,62 +1,49 @@
 {
-    
-    "about" : [
+  "about": [
+    {
+      "id": 1,
+      "projname": "Donut",
+      "orgname": "Codeuino",
+      "orglink": "www.codeuino.org/donut",
+      "desc": "CodeUino is a Non-Profit Open Source Social Networking organisation that provides various robust frameworks solutions which could span the entire world through building all kinds of social environments, discussion portals and collaboration platforms by giving prospectus to various other organisations, users and outreachers to showcase their products in a custom way.",
+      "expect": "CodeUino is a Non-Profit Open Source Social Networking organisation that provides various robust frameworks solutions which could span the entire world through building all kinds of social environments, discussion portals and collaboration platforms by giving prospectus to various other organisations, users and outreachers to showcase their products in a custom way.",
+      "topics": [
         {
-            "projname": "Donut",
-            "orgname" : "Codeuino",
-            "orglink" : "www.codeuino.org/donut",
-           "desc": "CodeUino is a Non-Profit Open Source Social Networking organisation that provides various robust frameworks solutions which could span the entire world through building all kinds of social environments, discussion portals and collaboration platforms by giving prospectus to various other organisations, users and outreachers to showcase their products in a custom way.",
-           "expect": "CodeUino is a Non-Profit Open Source Social Networking organisation that provides various robust frameworks solutions which could span the entire world through building all kinds of social environments, discussion portals and collaboration platforms by giving prospectus to various other organisations, users and outreachers to showcase their products in a custom way.",
-           "topics": [
-            {
-                "name" : "UI/UX"
-            },
-            {
-                "name": "Graphic Design"
-            },
-            {
-                "name": "Illustrations"
-            }
-    
-        ],
-        "techreq": [
-            {
-                "name" : "Adobe Illustrator"
-            },
-            {
-                "name": "Figma"
-            }
-    
-        ],
-        "Mentors": [
-            {
-                "name" : "Jaskirat Singh"
-            },
-            {
-                "name": "Siddarth"
-            }
-    
-        ],
-        "Tasks": [
-            {
-                "name" : "https://github.com/codeuino/social-platform-donut-frontend/issues/519"
-            },
-            {
-                "name": "https://github.com/codeuino/social-platform-donut-frontend/issues/519"
-            },
-            {
-                "name": "https://github.com/codeuino/social-platform-donut-frontend/issues/519"
-            }
-            
-    
-        ],
-        "IRC" : "http://slack.codeuino.org/",
-        "MailingList" : "http://slack.codeuino.org/"
-
-
+          "name": "UI/UX"
+        },
+        {
+          "name": "Graphic Design"
+        },
+        {
+          "name": "Illustrations"
         }
-        
-
-    ]
+      ],
+      "techreq": [
+        {
+          "req": "Adobe Illustrator"
+        },
+        {
+          "req": "Figma"
+        }
+      ],
+      "mentor1": "Jaskirat Singh",
+      "mentor2": "Siddarth",
+      "tasks": [
+        {
+          "id": 1,
+          "t": "https://github.com/codeuino/social-platform-donut-frontend/issues/519"
+        },
+        {
+          "id": 2,
+          "t": "https://github.com/codeuino/social-platform-donut-frontend/issues/519"
+        },
+        {
+          "id": 3,
+          "t": "https://github.com/codeuino/social-platform-donut-frontend/issues/519"
+        }
+      ],
+      "irc": "http://slack.codeuino.org/",
+      "mailinglist": "http://slack.codeuino.org/"
+    }
+  ]
 }
-
