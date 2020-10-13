@@ -6,5 +6,12 @@
             "email": "siddharth.simharaju@gmail.com"
         }
 
+    ],
+    "mentors": [
+        {
+            "id": 1,
+            "name": "Sidddharth S",
+            "email": "siddharth.simharaju@gmail.com"
+        }
     ]
 }
