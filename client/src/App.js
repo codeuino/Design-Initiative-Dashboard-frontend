@@ -9,6 +9,7 @@ import SignUp from "./Components/Authentication/Signup";
 import ProjectDetails from "./Components/Organization/OrganizationDetail/ProjectDetails/ProjectDetailsContainer";
 import SelectedProposals from "./Components/Dashboard/Proposals/SelectedProposals";
 import YourProposals from "./Components/Dashboard/Proposals/YourProposals";
+import Dashboard from "./Users/Mentor/Components/Dashboard/Dashboard";
 
 class App extends Component {
   render() {
@@ -37,6 +38,7 @@ class App extends Component {
               component={SelectedProposals}
             />
             <Route exact path="/YourProposals" component={YourProposals} />
+            <Route exact path="/MentorDashboard" component={Dashboard} />
           </Switch>
         </div>
       </BrowserRouter>
