@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
     height: 10,
   },
   btn: {
-    marginLeft: 425,
+    marginLeft: 550,
     marginTop: -2,
     height: 23,
     variant: "text",

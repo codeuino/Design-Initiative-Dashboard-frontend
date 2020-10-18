@@ -4,15 +4,15 @@ import Card from "@material-ui/core/Card";
 import { CardActions } from "@material-ui/core";
 import CardContent from "@material-ui/core/CardContent";
 import { CardMedia } from "@material-ui/core";
-import Button from "@materiaal-ui/core/Button";
+import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-import { projectMentoring } from "../../../../../Data/ProposalInfo.json";
+import { projectsMentoring } from "../../../../../Data/ProposalInfo.json";
 
 const Projects = () => {
   const classes = useStyles();
   return (
     <div>
-      {projectMentoring.map((data) => (
+      {projectsMentoring.map((data) => (
         <Card className={classes.root}>
           <div className={classes.details}>
             <CardMedia
@@ -58,9 +58,6 @@ const Projects = () => {
               <Button size="small" color="primary" className={classes.btn}>
                 View More
               </Button>
-              {/*<Button size="small" color="primary" className={classes.btn}>
-                View Project
-                </Button>*/}
             </CardActions>
           </div>
         </Card>
