@@ -10,6 +10,7 @@ import ProjectDetails from "./Components/Organization/OrganizationDetail/Project
 import SelectedProposals from "./Components/Dashboard/Proposals/SelectedProposals";
 import YourProposals from "./Components/Dashboard/Proposals/YourProposals";
 import Dashboard from "./Users/Mentor/Components/Dashboard/Dashboard";
+import ProjectsMentoring from "./Users/Mentor/Components/Dashboard/Projects/ProjectsMentoring";
 
 class App extends Component {
   render() {
@@ -39,6 +40,11 @@ class App extends Component {
             />
             <Route exact path="/YourProposals" component={YourProposals} />
             <Route exact path="/MentorDashboard" component={Dashboard} />
+            <Route
+              exact
+              path="/ProjectsMentoring"
+              component={ProjectsMentoring}
+            />
           </Switch>
         </div>
       </BrowserRouter>
