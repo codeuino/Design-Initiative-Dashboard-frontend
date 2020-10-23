@@ -46,7 +46,7 @@ class App extends Component {
               path="/ProjectsMentoring"
               component={ProjectsMentoring}
             />
-            <Route exact path = "/AdminDashboard" component={AdminDashboard} />
+            <Route exact path="/AdminDashboard" component={AdminDashboard} />
           </Switch>
         </div>
       </BrowserRouter>

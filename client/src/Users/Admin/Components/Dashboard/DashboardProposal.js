@@ -19,7 +19,7 @@ export default function MediaCard() {
           component="p"
           align="center"
         >
-         (no projects)
+          (no projects)
         </Typography>
 
         <CardActions>
