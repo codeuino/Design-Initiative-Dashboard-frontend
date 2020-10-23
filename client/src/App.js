@@ -11,6 +11,7 @@ import SelectedProposals from "./Components/Dashboard/Proposals/SelectedProposal
 import YourProposals from "./Components/Dashboard/Proposals/YourProposals";
 import Dashboard from "./Users/Mentor/Components/Dashboard/Dashboard";
 import ProjectsMentoring from "./Users/Mentor/Components/Dashboard/Projects/ProjectsMentoring";
+import AdminDashboard from "./Users/Admin/Components/Dashboard/Dashboard";
 
 class App extends Component {
   render() {
@@ -45,6 +46,7 @@ class App extends Component {
               path="/ProjectsMentoring"
               component={ProjectsMentoring}
             />
+            <Route exact path = "/AdminDashboard" component={AdminDashboard} />
           </Switch>
         </div>
       </BrowserRouter>
