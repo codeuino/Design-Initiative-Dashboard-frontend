@@ -3,7 +3,10 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles((theme) => ({
   container: {
     display: "flex",
-    padding: "0px 30px 30px 30px",
+    paddingTop: 0,
+    paddingRight: 30,
+    paddingBottom: 30,
+    paddingLeft: 30,
   },
   dashboard: {
     display: "flex",
@@ -11,12 +14,12 @@ const useStyles = makeStyles((theme) => ({
   dashpro: {
     marginTop: 70,
     marginLeft: 200,
-    fontSize: "24px",
+    fontSize: 24,
   },
   dashprop: {
     marginTop: 70,
     marginLeft: 430,
-    fontSize: "24px",
+    fontSize: 24,
   },
   profile: {
     minWidth: 350,
@@ -57,8 +60,8 @@ const useStyles = makeStyles((theme) => ({
   },
 
   large: {
-    width: theme.spacing(15),
-    height: theme.spacing(15),
+    width: 120,
+    height: 120,
   },
 }));
 
