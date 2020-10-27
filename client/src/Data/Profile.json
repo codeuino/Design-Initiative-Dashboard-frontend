@@ -13,5 +13,12 @@
             "name": "Sidddharth S",
             "email": "siddharth.simharaju@gmail.com"
         }
+    ],
+    "admin" : [
+        {
+            "id": 1,
+            "name": "Random Boi",
+            "email": "random@example.com"
+        }
     ]
 }
