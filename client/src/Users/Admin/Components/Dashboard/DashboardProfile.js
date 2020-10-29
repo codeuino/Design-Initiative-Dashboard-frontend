@@ -8,7 +8,7 @@ import ProfileImage from "./ProfileImage";
 import { admin } from "../../../../Data/Profile.json";
 import useStyles from "./DasboardStyling";
 
-export default function MediaCard() {
+export default function MediaCard(props) {
   const classes = useStyles();
 
   return (
@@ -23,7 +23,7 @@ export default function MediaCard() {
           </CardActions>
 
           <CardContent>
-            <ProfileImage />
+            <ProfileImage name={ad.name}/>
 
             <Typography
               className={classes.name}

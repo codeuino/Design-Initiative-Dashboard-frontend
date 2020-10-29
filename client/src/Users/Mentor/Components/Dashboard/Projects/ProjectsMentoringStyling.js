@@ -17,7 +17,7 @@ const useStyles = makeStyles({
   pro: {
     marginTop: 70,
     marginLeft: 170,
-    fontSize: "24px",
+    fontSize: 24,
   },
 });
 

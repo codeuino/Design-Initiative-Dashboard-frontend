@@ -41,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
   cap: {
     marginTop: 0,
     marginLeft: 30,
-    borderRadius: "30px",
+    borderRadius: 30,
     height: 23,
     textTransform: "none",
   },

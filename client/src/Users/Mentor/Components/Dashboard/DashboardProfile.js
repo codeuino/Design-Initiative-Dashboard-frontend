@@ -23,7 +23,7 @@ export default function MediaCard() {
           </CardActions>
 
           <CardContent>
-            <ProfileImage />
+            <ProfileImage name={mt.name} />
 
             <Typography
               className={classes.name}
